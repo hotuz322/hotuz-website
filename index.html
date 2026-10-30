@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b18">
+  <meta name="description" content="HotUz — знакомства и общение для совершеннолетних.">
+  <title>HotUz — знакомства начинаются здесь</title>
+  <style>
+    :root{--bg:#100b18;--panel:#1b1225;--pink:#f12b91;--pink2:#ff5bb1;--muted:#c9b9ce;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 80% 10%,#45123d 0,transparent 38%),var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+    header{padding:24px 0;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:28px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--pink)}
+    .age{font-size:12px;color:var(--muted);border:1px solid #5b4564;border-radius:99px;padding:6px 11px}
+    .hero{min-height:570px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:32px;padding:45px 0 65px}
+    .eyebrow{color:#ff83c4;font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+    h1{font-size:clamp(42px,7vw,72px);line-height:1.02;letter-spacing:-2px;margin:15px 0 20px}
+    h1 span{color:var(--pink2)}
+    .lead{font-size:18px;color:var(--muted);max-width:520px}
+    .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 23px;border-radius:12px;text-decoration:none;font-weight:800;background:linear-gradient(135deg,var(--pink),#b91b79);box-shadow:0 10px 35px #e3268a40}
+    .btn.secondary{background:#291b32;box-shadow:none;border:1px solid #5b3b62}
+    .note{font-size:12px;color:#a995b2;margin-top:13px}
+    .visual{min-height:390px;border-radius:28px;background:linear-gradient(145deg,#6d1b55,#25132e 55%,#120d1c);border:1px solid #70416d;display:flex;align-items:end;padding:28px;overflow:hidden;position:relative}
+    .visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}
+    .visual:before{width:260px;height:260px;background:#ff4eaa55;top:-70px;right:-55px}
+    .visual:after{width:210px;height:210px;background:#8d48ff44;bottom:55px;left:-80px}
+    .visual-card{position:relative;z-index:1;background:#170f20d9;border:1px solid #ffffff2a;border-radius:18px;padding:20px;width:100%;backdrop-filter:blur(8px)}
+    .visual-card strong{font-size:22px}.visual-card p{color:var(--muted);margin:7px 0 0}
+    section{padding:54px 0}
+    h2{font-size:clamp(28px,4vw,42px);margin:0 0 12px;letter-spacing:-1px}
+    .sub{color:var(--muted);margin:0 0 26px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:var(--panel);border:1px solid #38253f;border-radius:18px;padding:23px}
+    .ico{font-size:26px}.feature h3{margin:10px 0 6px}.feature p{color:var(--muted);margin:0}
+    .download{background:linear-gradient(120deg,#35122f,#1b1225);border:1px solid #60305b;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .download p{color:var(--muted);margin:8px 0 0}
+    footer{padding:35px 0 45px;color:#a995b2;font-size:13px;border-top:1px solid #302039;margin-top:50px}
+    footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:25px}.visual{min-height:270px}.features{grid-template-columns:1fr}.download{align-items:flex-start;flex-direction:column}header{padding:18px 0}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="logo">Hot<span>Uz</span></div>
+    <div class="age">ТОЛЬКО 18+</div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Знакомства без лишних сложностей</div>
+        <h1>Хочешь <span>горячих</span><br>знакомств?</h1>
+        <p class="lead">Открывай новые знакомства, общайся и находи людей, с которыми совпадают интересы.</p>
+        <div class="actions">
+          <a class="btn" href="#download">Скачать приложение <span aria-hidden="true">↓</span></a>
+          <a class="btn secondary" href="#about">Узнать больше</a>
+        </div>
+        <div class="note">Сервис предназначен исключительно для совершеннолетних пользователей (18+).</div>
+      </div>
+      <div class="visual" aria-label="Декоративный блок HotUz">
+        <div class="visual-card">
+          <strong>Твоя история начинается здесь</strong>
+          <p>Знакомься. Общайся. Находи близких по духу людей.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="wrap" id="about">
+      <h2>Знакомства в твоём ритме</h2>
+      <p class="sub">Простой способ открыть для себя новые знакомства.</p>
+      <div class="features">
+        <article class="feature"><div class="ico">💬</div><h3>Живое общение</h3><p>Начинай разговор и узнавай друг друга постепенно.</p></article>
+        <article class="feature"><div class="ico">💜</div><h3>Новые знакомства</h3><p>Расширяй круг общения и находи людей по интересам.</p></article>
+        <article class="feature"><div class="ico">📱</div><h3>Удобно с телефона</h3><p>Пользуйся приложением Android в удобное время.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="download">
+      <div class="download">
+        <div>
+          <h2>Попробуй HotUz</h2>
+          <p>Скачай Android-приложение и начни знакомиться.</p>
+          <p class="note">Перед публикацией сюда нужно добавить прямую ссылку на APK-файл в GitHub Releases.</p>
+        </div>
+        <a class="btn" href="APK_DOWNLOAD_LINK" id="downloadButton">Скачать для Android</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="year"></span> HotUz</div>
+      <div>18+ · Уважайте границы и личный выбор других людей.</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
